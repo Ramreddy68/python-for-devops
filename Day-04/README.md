@@ -17,6 +17,14 @@ print(message)
 ```
 
 In this example, `greet` is a function that takes a `name` argument and returns a greeting message.
+def greet(name): → defines the function with a parameter name.
+message = greet("Alice") → calls that function and passes "Alice" as the value for name.
+Inside the function, name becomes "Alice", the f‑string builds "Hello, Alice!", and return sends that string back to the caller.
+print(message) → prints the returned value.
+
+greet("Alice") → caller
+return f"Hello, {name}!" → sends value back
+message = → receives the value
 
 ### Modules
 
