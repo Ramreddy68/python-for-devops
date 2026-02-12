@@ -69,4 +69,5 @@ Loop 3 → print(2), then count = 2+1 → 3
 Loop 4 → print(3), then count = 3+1 → 4
 Loop 5 → print(4), then count = 4+1 → 5 → condition fails → stop
 
+
 In this example, the "while" loop continues to execute as long as the "count" is less than 5. The "count" variable is incremented in each iteration.
