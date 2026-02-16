@@ -13,3 +13,18 @@ def get_server_status(server_name):
 server_name = 'server2'
 status = get_server_status(server_name)
 print(f"{server_name} status: {status}")
+
+# Another way 
+server_config = {
+    'server1' : {'ip': '193.168.1.1', 'port': 8080, 'status': 'active'},
+    'server2' : {'ip': '193.168.1.2', 'port': 8081, 'status': 'inactive'},
+    'server3' : {'ip': '193.168.1.3', 'port': 8000, 'status': 'active'},
+}
+def get_server_status(server_name):
+    try:
+        return server_config[server_name]['status']
+    except KeyError:
+        return 'Server not found'
+server_name = 'server1'
+status = get_server_status(server_name)
+print(f"{server_name} status: {status}")
